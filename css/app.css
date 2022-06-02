@@ -15,9 +15,21 @@
 .navbar-light .nav-link:hover {
   color: var(--red);
 }
+#body .nav-link {
+  color:#000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition:color 1s ;
+}
+ nav .nav-link:hover{
+  color: var(--red)!important;
+}
+
 /*! ---------------------- 2- CAROUSEL ----------------------------- */
 .carousel-item  {
-  max-height: calc(100vh - 88px);
+max-height: 100vh;
+}.carousel-item img {
+  min-width: 100%;
 }
 
 .carousel-item h1 {
@@ -44,7 +56,7 @@
 }
 
 .carousel-caption {
-  bottom:5rem;
+  bottom:20%;
 }
 /*! ------------------- 3- ABOUT SECTION ------------------------ */
 
@@ -82,4 +94,34 @@ section#instructors .card:hover {
 }
 /** ------------------- UP-BUTTON --------------------- */
 
+.up-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--red);
+  text-align: center;
+  padding: 0.6rem;
+  color: white;
+  font-size: 1.3rem;
+}
+.up-btn:hover {
+  color:yellow;
+}
+
 /*! -------------------- 7- FOOTER ------------------------ */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  transition: all .5s ease-in-out; 
+}
+footer a i{
+  font-size: 2rem;
+}
+footer a:hover {
+  color:#dc3545;
+
+}
